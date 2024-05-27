@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=tanker@400&f[]=switzer@100,101,200,201,300,301,400,401,500,501,600,601,700,701,800,801,900,901&f[]=panchang@200,300,400,500,600,700,800,1&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=tanker@400&f[]=switzer@100,101,200,201,300,301,400,401,500,501,600,601,700,701,800,801,900,901&f[]=panchang@200,300,400,500,600,700,800,1&f[]=supreme@100,101,200,201,300,301,400,401,501,700,701,800,801,1,2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ralix-rigister.css">
+    <title>CALIX HEALTHY</title>
+</head>
+<body>
+
+    <!-- principal page------------------------------------------ -->
+<div id="container">
+    <div id="circl"></div>
+    <div id="user-vendor">
+        <h1>CALIX-Bio.</h1>
+        <div id="started">
+            <h4 id="type">creat account like</h4>
+            <button onclick="user()">user</button>
+            <button onclick="vendor()">vendor</button>
+        </div>
+    </div>
+
+
+    <main>
+        <div id="imag">
+            <img src="images/bio.png" >
+            <div id="shadow"></div>
+        </div>
+
+        <div id="text">
+            <h1>CaliX <span>Bio</span></h1>
+            <p>Stock your kitchen with goodness! <span>CaliX-Bio store
+                 delivers organic produce, whole grains, and pantry staples
+                  right to your door.</span> Shop delicious, feel-great options
+                   for every diet.</p>
+        </div>
+
+    </main>
+    <h3 id="hey">Have everything you want delivered</h3>
+    <div id="prop">
+        
+        <div class="propN">
+            <div class="contain">
+                <img src="images/city.jpg" width="150px">
+                <div class="free"></div>
+            </div>
+            <h3>All famous restaurants</h3>
+            <p>With a great variety of restaurants you can order your 
+                favourite food or explore new restaurants nearby!</p>
+        </div>
+        <div class="propN">
+            <div class="contain">
+                <img src="images/dely.jpg" width="190px">
+            </div>
+            <h3>Fast delivery</h3>
+            <p>Like a flash! Order or send anything in your city and receive it in minutes</p>
+        </div>
+        <div class="propN">
+            <div class="contain">
+                <img src="images/calo.jpg" width="150px">
+            </div>
+            <h3>Every meal has its calories</h3>
+            <p>Be mindful of your plate! Every bite counts. Track calories for a
+                 balanced and informed you.</p>
+        </div>
+    </div>
+
+    <div id="them">
+        <h2>Cities we deliver to</h2>
+        <div id="typs">
+            <span>Marrakech</span>
+            <span>Casablanca</span>
+            <span>Tanger</span>
+            <span>Rabat</span>
+            <span>Fès</span>
+            <span>Asafi</span>
+            <span>Agadir</span>
+        </div>
+    </div>
+
+
+    <div id="them">
+        <h2>Popular Categories</h2>
+        <div id="typs">
+            <span>pasta</span>
+            <span>Healthy burger</span>
+            <span>Salad</span>
+            <span>Fish</span>
+            <span>Steaks</span>
+            <span>Juices</span>
+        </div>
+    </div>
+
+<div id="green"></div>
+
+    <div id="end">
+        <div class="black"></div>
+    </div>
+</div>
+
+
+
+ <!-- user sing up and login pag------------------------------------->
+    <div id="cover">
+        <!-- button that will return to principal page --------------->
+        <div id="returnHome" onclick="turn()">home</div>
+
+
+        <!-- user sing-up page---------------------------- --------------->
+        <div class="sing-up">
+            <h1>sing-in</h1>
+            <p>Enter your information</p>
+            <form action="#">
+                <div class="numb">
+                    <input type="text" class="name1 name" placeholder="First Name">
+                    <input type="text" class="name2 name" placeholder="Last Name">
+                </div>
+                <div class="numb">
+                    <label for="num" class="num">+212</label>
+                    <input type="text" id="num" placeholder="mobile number">
+                </div>
+                <input type="email" id="mail" placeholder="Enter your email">
+                <input type="password" id="pass" placeholder="Enter your password">
+                <p id="error">Something's wrong</p>
+                <p id="error3">this email is already exist</p>
+                <a class="toU"><input type="button" id="com" value="confirm" onclick="comfirm1()"></a>
+            </form>
+            <a onclick="toIn()" href="#">I'm already have an account</a>
+        </div>
+
+        <!-- user login page---------------------------- --------------->
+        <div class="sing-in">
+            <h1>Login</h1>
+            <p>Enter your information</p>
+            <form action="#">
+                <input type="email" id="mail2" placeholder="Enter your email">
+                <input type="password" id="pass2" placeholder="Enter your password">
+                <p id="error2">this email is unavailable</p>
+                <a class="toU"><input type="button" id="com2" value="confirm" onclick="comfirm2()"></a>
+            </form>
+            <a onclick="toUp()" href="#">creat an account</a>
+        </div>
+    </div>
+
+
+
+
+    <div id="vendorCover">
+        <!-- button that will return to principal page --------------->
+        <div id="returnHome" onclick="turn()">home</div>
+
+
+        <!-- vendor sing-up page---------------------------- --------------->
+        <div class="vendorSing-up">
+            <h1>sing-up as Vendor</h1>
+            <p>Enter your information</p>
+            <form action="#">
+                    <input type="text" class="brandName" placeholder="Your brand name">
+                <div class="numb">
+                    <label for="Vnum" class="Vnum">+212</label>
+                    <input type="text" id="Vnum" placeholder="mobile number">
+                </div>
+                <input type="email" id="Vmail" placeholder="Enter your email">
+                <input type="password" id="Vpass" placeholder="Enter your password">
+                <p id="Verror">Something's wrong</p>
+                <p id="Verror3">this email is already exist</p>
+                <a class="toV"><input type="button" id="Vcom" value="confirm" onclick="comfirm3()"></a>
+            </form>
+            <a onclick="VtoIn()" href="#">I'm already have an account</a>
+        </div>
+
+        <!-- vendor login page---------------------------- --------------->
+        <div class="VendorSing-in">
+            <h1>Login as Vendor</h1>
+            <p>Enter your information</p>
+            <form action="#">
+                <input type="email" id="Vmail2" placeholder="Enter your email">
+                <input type="password" id="Vpass2" placeholder="Enter your password">
+                <p id="Verror2">this email is unavailable</p>
+                <a class="toV"><input type="button" id="Vcom2" value="confirm" onclick="comfirm4()"></a>
+            </form>
+            <a onclick="VtoUp()" href="#">creat an account</a>
+        </div>
+    </div>
+    <div id="accueil">
+
+    </div>
+
+
+
+
+
+    <script>   
+
+        let name = document.getElementsByClassName('name1')[0]
+        let nickname = document.getElementsByClassName('name2')[0]
+        let number = document.getElementById('num')
+        let mail = document.getElementById('mail')
+        let pass = document.getElementById('pass')
+        let mail2 = document.getElementById('mail2')
+        let pass2 = document.getElementById('pass2')
+        let error = document.getElementById('error');
+        let error2 = document.getElementById('error2');
+        let error3 = document.getElementById('error3');
+        let brandName = document.getElementsByClassName('brandName')[0]
+        let Vnumber = document.getElementById('Vnum')
+        let Vmail = document.getElementById('Vmail')
+        let Vpass = document.getElementById('Vpass')
+        let Vmail2 = document.getElementById('Vmail2')
+        let Vpass2 = document.getElementById('Vpass2')
+        let Verror = document.getElementById('Verror');
+        let Verror2 = document.getElementById('Verror2');
+        let Verror3 = document.getElementById('Verror3');
+        let container = document.getElementById("container")
+        let cover = document.getElementById("cover")
+        let singUp = document.getElementsByClassName("sing-up")[0]
+        let singIp = document.getElementsByClassName("sing-in")[0]
+        let VsingUp = document.getElementsByClassName("vendorSing-up")[0]
+        let VsingIp = document.getElementsByClassName("VendorSing-in")[0]
+        let toUserWeb1=document.getElementsByClassName('toU')[0]
+        let toVendorWeb3=document.getElementsByClassName('toV')[0]
+        let toUserWeb2=document.getElementsByClassName('toU')[1]
+        let toVendorWeb4=document.getElementsByClassName('toV')[1]
+
+
+            
+        number.addEventListener('input', () => {
+          const value = number.value;
+          const newValue = value.replace(/[^0-9]/g, '');
+          number.value = newValue;
+        });
+        Vnumber.addEventListener('input', () => {
+          const Vvalue = Vnumber.value;
+          const VnewValue = Vvalue.replace(/[^0-9]/g, '');
+          Vnumber.value = VnewValue;
+        });
+
+        //turn between user login and sing in
+        function toIn(){
+            singUp.style.display='none'
+            singIp.style.display='flex'
+        }
+        function toUp(){
+            singUp.style.display='flex'
+            singIp.style.display='none'
+        }
+
+        //turn between vendor login and sing in
+        function VtoIn(){
+            VsingUp.style.display='none'
+            VsingIp.style.display='flex'
+        }
+        function VtoUp(){
+            VsingUp.style.display='flex'
+            VsingIp.style.display='none'
+        }
+
+        //user login surface
+        function user(){
+
+            container.style.cssText=`position: absolute;
+                                        filter: blur(10px); 
+                                        transition:.3s;`
+            cover.style.display='flex'
+            document.body.style.overflow='hidden'
+        }
+        //vendor login surface
+        function vendor(){
+            let container = document.getElementById("container")
+            let vendorCover = document.getElementById("vendorCover")
+            container.style.cssText=`position: absolute;
+                                        filter: blur(10px); 
+                                        transition:.3s;`
+            vendorCover.style.display='flex'
+            document.body.style.overflow='hidden'
+        }
+
+        let id
+        id=0
+
+        let users
+        if(localStorage.data != null){
+            //"JSON.stringify" turn the table to string and "JSON.parse" turn into hes origin form
+            users = JSON.parse(localStorage.data);
+        }
+        else{
+            users= [];
+        }
+
+
+        let vendors
+        if(localStorage.Vdata != null){
+            //"JSON.stringify" turn the table to string and "JSON.parse" turn into hes origin form
+            vendors = JSON.parse(localStorage.Vdata);
+        }
+        else{
+            vendors= [];
+        }
+        
+
+
+
+        function comfirm1(){
+
+
+            let x=false
+            //if email is already exist--------------------------------------
+            for (let i = 0; i < users.length; i++) {
+                if(users[i].email==mail.value){
+                    x=true
+                    break
+                }
+            }
+            if(x){
+                error3.style.display='block'
+                error.style.display='none'
+            }
+            else{
+            if( number.value.length==9 && mail.value.includes('@gmail.com')==true && pass.value.length>=8){
+                let info={
+                    id:id++,
+                    username:`${name.value} ${nickname.value}`,
+                    num:number.value,
+                    email:mail.value,
+                    password:pass.value,
+                }
+                //pour ajouter object info dans le tableau users
+                users.push(info)
+                //pour ajouter le tableau users dans data
+                localStorage.setItem('data',JSON.stringify(users))
+                error.style.display='none'
+                error3.style.display='none'
+
+                let nMail= mail.value
+                localStorage.setItem('UserNewMail',JSON.stringify(nMail))
+
+                
+                toUserWeb1.href="userFace.html"
+            }
+
+            else{
+                error.style.display='block'
+                error3.style.display='none'
+            }
+        }
+        }
+
+        function comfirm3(){
+
+
+            let y=false
+            //if email is already exist--------------------------------------
+            for (let i = 0; i < vendors.length; i++) {
+                if(vendors[i].email==Vmail.value){
+                    y=true
+                    break
+                }
+            }
+            if(y){
+                Verror3.style.display='block'
+                Verror.style.display='none'
+            }
+            else{
+                if(brandName.value!='' && Vnumber.value.length==9 && Vmail.value.includes('@gmail.com')==true && Vpass.value.length>=8){
+                    let Vinfo={
+                        id:id++,
+                        brandName:brandName.value,
+                        num:Vnumber.value,
+                        email:Vmail.value,
+                        password:Vpass.value,
+                    }
+                    //pour ajouter object info dans le tableau users
+                    vendors.push(Vinfo)
+                    //pour ajouter le tableau users dans data
+                    localStorage.setItem('Vdata',JSON.stringify(vendors))
+                    console.log(vendors)
+                    Verror.style.display='none'
+                    Verror3.style.display='none'
+                    console.log('ali')
+
+                    let nMail= Vmail.value
+                    localStorage.setItem('VendorNewMail',JSON.stringify(nMail))
+                    
+                    toVendorWeb3.href="vendorFace.html"
+                }
+
+                else{
+                    Verror.style.display='block'
+                    Verror3.style.display='none'
+                }
+            }
+        }
+
+
+
+        function comfirm2(){
+            //search
+            let x=false
+            //if email is already exist--------------------------------------
+            for (var i = 0; i < users.length; i++) {
+                if(users[i].email==mail2.value){
+                    x=true
+                    break
+                }
+            }
+            if(x){
+                error2.style.display='none'
+                if (users[i].password==pass2.value) {
+
+                    //pour stocker email dans local storage
+                    let nMail= mail2.value
+                    localStorage.setItem('UserNewMail',JSON.stringify(nMail))
+
+                    toUserWeb2.href="userFace.html"
+                }
+                else{
+                    error2.style.display='block'
+                }
+            }
+            else{
+                error2.style.display='block'
+            }
+        }
+        function comfirm4(){
+            //search
+            let y=false
+            //if email is already exist--------------------------------------
+            for (var i = 0; i < vendors.length; i++) {
+                if(vendors[i].email==Vmail2.value){
+                    y=true
+                    break
+                }
+            }
+            if(y){
+                Verror2.style.display='none'
+                if (vendors[i].password==Vpass2.value) {
+                    //pour stocker email dans local storage
+                    let nMail= Vmail2.value
+                    localStorage.setItem('VendorNewMail',JSON.stringify(nMail))
+                    
+                    toVendorWeb4.href="vendorFace.html"
+                }
+                else{
+                    Verror2.style.display='block'
+                    
+                }
+            }
+            else{
+                Verror2.style.display='block'
+                console.log('ali')
+            }
+        }
+
+        function turn(){
+            let container = document.getElementById("container")
+            let cover = document.getElementById("cover")
+            let vendorCover = document.getElementById("vendorCover")
+            container.style.cssText=`position: reletive;
+                                        filter: blur(0);
+                                        transition:.3s; `
+            cover.style.display='none'
+            vendorCover.style.display='none'
+            document.body.style.overflow='visible'
+        }
+
+        function accueil(){
+            document.write('ali')
+        }
+    </script>
+    
+</body>
+</html>
